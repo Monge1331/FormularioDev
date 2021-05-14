@@ -1,0 +1,145 @@
+:root{
+    --white: #FFF;
+  
+    --gray-50: #F7F8FA;
+    --gray-100: #E6E8EB;
+    --gray-200: #AFB2B1;
+    --gray-500: #808080;
+    --gray-800: #494D4B;
+  
+    --green-500: #04D361;
+    
+    --purple-300: #9F75FF;
+    --purple-400: #9164FA; 
+    --purple-500: #8257E5;
+    --purple-800: #6F48C9;
+  
+    --ciano-300: #75fff1;
+    --ciano-400: #66faeb; 
+    --ciano-500: #57e5d7;
+    --ciano-800: #4ac9bc;
+    --ciano-900: #3fa298;
+  
+    --red-50 : #CD5C5C;
+  
+  }
+ 
+ 
+ *{
+     margin:0;
+     padding: 0;
+ }
+
+ #tittle{
+     font-family: 'Roboto', sans-serif;
+     color: #59429d;
+     margin-left: 7%;
+     
+ }
+
+ #subtittle {
+    font-family:'Roboto', sans-serif;
+     color: var(--gray-800);
+     margin-left: 10%;
+     
+ }
+
+ fieldset {
+     border: 0;
+ }
+
+ body {
+     background-color:white;
+     font-family: 'Roboto';
+     font-size: 1em;
+     color: #59429d;
+     margin-left: 36%;
+     margin-top:2%;
+     justify-content: center;
+
+ }
+
+ input, select, textarea, button {
+     font-family: 'Roboto', sans-serif;
+     font-size: 1em;
+     color: #59429d;
+     border-radius: 5px;
+ }
+
+ .group:before, .group:after {
+     display: table;
+ }
+
+ .group:after {
+     clear: both;
+ }
+
+ .camp {
+     margin-bottom: 1em;
+ }
+
+ .camp label {
+     margin-bottom: 0.2em;
+     color: #59429d;
+     display: block;
+ }
+
+ fieldset.group .camp {
+     float: left;
+     margin-right: 1em;
+ }
+
+ .camp input[type ="text"], .camp input[type ="email"], .camp select, .camp textarea {
+     padding: 0.2em;
+     border: 1px solid #59429d;
+     box-shadow: 2px 2px 2px rgb(0,0,0,0, 0.2);
+     display: block;
+ }
+
+ .camp select option {
+     padding-right: 1em;
+ }
+
+ .camp input:focus, .camp select:focus, .camp textarea:focus {
+     background: #E0E0F8;
+ }
+ .button {
+     font-size: 1.2em;
+     background: #59429d;
+     border:0;
+     margin-bottom: 1em;
+     color: #ffffff;
+     padding: 0.2em 0.6em;
+     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+     position: absolute;
+     top: 90%;
+     left: 50%; 
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .button:hover {
+     background: #ccbbff;
+     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+     text-shadow: none;
+
+ }
+ .button, select {
+     cursor: pointer;
+ }
+
+ #checkbox {
+     display: inline-block; 
+ }
+
+ @media(min-width:800px) {
+     html {
+         font-size: 87.5%;
+     }
+    #group {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        gap: 2rem;
+    }
+ }
